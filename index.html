@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+ <html lang="en">
+ 
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Development Tracker</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+ </head>
+ 
+
+ <body>
+  <header class="header">
+  <div class="container">
+  <h1>Personal Development Tracker</h1>
+  <p>Track your progress, achieve your goals, and unlock your potential.</p>
+  <button id="darkModeToggle" class="btn btn-sm"><i class="fas fa-moon"></i> Dark Mode</button>
+  </div>
+  </header>
+ 
+
+  <main class="container mt-4">
+  <section id="goalSetting" class="mb-4">
+  <h2>Set Your Goals</h2>
+  <div class="card">
+  <div class="card-body">
+  <form id="goalForm">
+  <div class="form-group">
+  <label for="goalName">Goal Name:</label>
+  <input type="text" class="form-control" id="goalName" placeholder="Enter your goal"
+  required>
+  <div class="invalid-feedback">Please enter a goal name.</div>
+  </div>
+  <div class="form-group">
+  <label for="goalType">Goal Type:</label>
+  <select class="form-control" id="goalType">
+  <option value="career">Career Development</option>
+  <option value="health">Health & Fitness</option>
+  <option value="education">Education & Learning</option>
+  <option value="finance">Financial Goals</option>
+  <option value="personal">Personal Well-being</option>
+  </select>
+  </div>
+  <div class="form-group">
+  <label for="goalDescription">Goal Description:</label>
+  <textarea class="form-control" id="goalDescription" rows="3" placeholder="Describe your goal"
+  required></textarea>
+  <div class="invalid-feedback">Please provide a description.</div>
+  </div>
+  <div class="form-group">
+  <label for="goalDeadline">Goal Deadline:</label>
+  <input type="date" class="form-control" id="goalDeadline" required>
+  <div class="invalid-feedback">Please set a deadline.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Add Goal</button>
+  </form>
+  </div>
+  </div>
+  </section>
+ 
+
+  <section id="progressTracking" class="mb-4">
+  <h2>Track Your Progress</h2>
+  <div class="card">
+  <div class="card-body">
+  <ul id="goalList" class="list-group">
+  <!-- Goals will be dynamically added here -->
+  </ul>
+  </div>
+  </div>
+  </section>
+ 
+
+  <section id="statsDashboard" class="mb-4">
+  <h2>Your Progress Stats</h2>
+  <div class="row">
+  <div class="col-md-4">
+  <div class="card">
+  <div class="card-body">
+  <h5 class="card-title">Goals Completed</h5>
+  <p class="card-text" id="goalsCompleted">0</p>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <div class="card">
+  <div class="card-body">
+  <h5 class="card-title">Goals in Progress</h5>
+  <p class="card-text" id="goalsInProgress">0</p>
+  </div>
+  </div>
+  </div>
+  <div class="col-md-4">
+  <div class="card">
+  <div class="card-body">
+  <h5 class="card-title">Total Goals Set</h5>
+  <p class="card-text" id="totalGoals">0</p>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>
+ 
+
+  <section id="dailyLog" class="mb-4">
+  <h2>Daily Log</h2>
+  <div class="card">
+  <div class="card-body">
+  <form id="dailyLogForm">
+  <div class="form-group">
+  <label for="logDate">Date:</label>
+  <input type="date" class="form-control" id="logDate" required>
+  <div class="invalid-feedback">Please select a date.</div>
+  </div>
+  <div class="form-group">
+  <label for="logEntry">Entry:</label>
+  <textarea class="form-control" id="logEntry" rows="4" placeholder="Write about your progress today"
+  required></textarea>
+  <div class="invalid-feedback">Please enter a log entry.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Save Log</button>
+  </form>
+  </div>
+  </div>
+  </section>
+ 
+
+  <div id="notification" class="notification"></div>
+  </main>
+ 
+
+  <footer class="footer">
+  <div class="container">
+  <p>&copy; 2024 Personal Development Tracker. All rights reserved.</p>
+  <a href="#">About</a> | <a href="#">Contact</a>
+  </div>
+  </footer>
+ 
+
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </body>
+ 
+
+ </html>
