@@ -4,7 +4,7 @@
 This project aims to create a simple, client-side Personal Development Tracker application. The application allows users to define goals, track their progress, and record daily logs. The application utilizes HTML, CSS, and JavaScript to provide a user-friendly interface for managing personal development activities. Key features include goal creation, progress tracking (marking goals complete/incomplete), goal deletion, daily log entries and a dark/light mode toggle. Data is currently managed in-memory, and the user interface uses Bootstrap for styling and validation.
 
 ## Output
-<iframe src="https://github.com/niat-web/Personal_Development_Tracker" height="1000" width="300" title="Personal_Development_Tracker"></iframe>
+<iframe src="https://niat-web.github.io/Personal_Development_Tracker/" height="1000" width="300" title="Personal_Development_Tracker"></iframe>
 
 ## Project Requirements
 **Technologies:** HTML, CSS, JavaScript, Bootstrap
